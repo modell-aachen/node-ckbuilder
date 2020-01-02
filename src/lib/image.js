@@ -8,8 +8,8 @@
 var fs = require( "fs-extra" );
 var path = require( "path" );
 try {
-	var Canvas = require( "canvas" );
-	var Image = Canvas.Image;
+	var {createCanvas, Image} = require( "canvas" );
+	var Canvas = createCanvas;
 } catch( e ) {
 	Canvas = null;
 	Image = null;
